@@ -1,0 +1,3 @@
+the path property of the router is jsut the pattern which react looking to match 
+
+the <Link> component has "to" props which tells where to go same as props.history.push('') 
