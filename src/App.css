@@ -4,3 +4,7 @@ body {
   font-family: "Roboto Mono", monospace;
   padding: 20px 60px;
 }
+
+* {
+  box-sizing: border-box;
+}
