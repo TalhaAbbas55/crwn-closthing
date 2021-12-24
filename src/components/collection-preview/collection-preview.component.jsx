@@ -6,14 +6,15 @@ const CollectionsPreveiw = (props) => {
     return (
         <div div className="collection-preview" >
             <h1 className="title">
-                {props.title.toUpperCase()}
+                {props.title.toString().toUpperCase()}
             </h1>
             <div className="preview">
-                {props.items
-                    .filter((item, idx) => idx < 4)
-                    .map(({ id, ...otherItemProps }) => (
-                        <CollectionItem key={id} {...otherItemProps} />
-                    ))}
+                {
+                    props.items
+                        .filter((item, idx) => idx < 4)
+                        .map((item) => (
+                            <CollectionItem key={item.id} item={item} />
+                        ))}
             </div>
         </div >
     )

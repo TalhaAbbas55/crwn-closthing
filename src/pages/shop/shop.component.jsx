@@ -10,9 +10,7 @@ class ShopPage extends Component {
         return (
             <div className="shop-page">
                 {this.state.collections.map((collection) => {
-                    console.log(collection.id);
-                    console.log(collection.title);
-                    console.log(collection.items);
+
                     return (
                         <CollectionPreview key={collection.id} title={collection.title} items={collection.items} />
                     )
