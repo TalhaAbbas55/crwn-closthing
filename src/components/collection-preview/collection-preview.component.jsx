@@ -6,7 +6,7 @@ const CollectionsPreveiw = (props) => {
     return (
         <div div className="collection-preview" >
             <h1 className="title">
-                {props.title.toString().toUpperCase()}
+                {(props.title).toString().toUpperCase()}
             </h1>
             <div className="preview">
                 {

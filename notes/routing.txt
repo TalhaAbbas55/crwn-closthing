@@ -1,3 +1,28 @@
 the path property of the router is jsut the pattern which react looking to match 
 
 the <Link> component has "to" props which tells where to go same as props.history.push('') 
+
+
+there are two types of data in firebase firestore colleciton { connected each other data } and documents
+
+we can't point out document type data in colleciton
+
+firestore.colleciton('users').doc('sjlakj') => will select the sjlakj document in the users collection of the firebase 
+and we can go on further by selecting doc for doucemnt and collection for collections in the firebase
+
+or can also specify the path selector like specifying "firestore.doc('a/b/d/c/'); which will select the document and we can do the same for the colleciton which specif y the dynamic path 
+
+query reference is just something which tells us aobut the data present in the firebase
+
+
+calling onshapshot is very similar to like calling onauthstate changes 
+
+the setstate() is aynchronous method means if we have to log somthing after setstae then we have to do this by passign a callback() 
+
+every single reducer gets every single action which is gets fired even if it is not related to the reducer 
+
+In the context of a React app, memoization is a technique where, whenever the parent component re-renders, the child component re-renders only if there's a change in the props. If there's no change in the props, it won't execute the render method and will return the cached result
+
+there are two types of selecotrs firs one is the input selector{
+    it does not use createselector
+} and the second one is the output selecotr 
